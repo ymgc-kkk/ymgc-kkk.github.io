@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>仮 予想アプリ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/umaHorse.css">
+
+    <script type="text/javascript">
+        function keisan1() {
+
+            // 騎手
+            var price1 = document.form1.goods1.options[document.form1.goods1.selectedIndex].value;
+
+            // 人気　
+            var pop1 = document.form1.popularity1.options[document.form1.popularity1.selectedIndex].value;
+
+            // 馬体重
+            var wgh1 = document.form1.weight1.options[document.form1.weight1.selectedIndex].value;
+
+            // 距離
+            var dtc1 = document.form1.distance1.options[document.form1.distance1.selectedIndex].value;
+
+            // 会場
+            var plc1 = document.form1.place1.options[document.form1.place1.selectedIndex].value;
+
+            // 馬場
+            var hmd1 = document.form1.humid1.options[document.form1.humid1.selectedIndex].value;
+
+            // 休養
+            var rst1 = document.form1.rest1.options[document.form1.rest1.selectedIndex].value;
+
+            // 合計計算
+            var total1 = parseFloat(price1) * parseFloat(pop1) * parseFloat(wgh1) * parseFloat(dtc1) * parseFloat(plc1) * parseFloat(hmd1) * parseFloat(rst1) * 100;
+
+            // 設定終了
+
+            document.form1.field_total1.value = total1; // 合計表示
+
+        }
+
+        function keisan2() {
+
+            // 騎手
+            var price2 = document.form2.goods2.options[document.form2.goods2.selectedIndex].value;
+
+            // 人気　
+            var pop2 = document.form2.popularity2.options[document.form2.popularity2.selectedIndex].value;
+
+            // 馬体重
+            var wgh2 = document.form2.weight2.options[document.form2.weight2.selectedIndex].value;
+
+            // 距離
+            var dtc2 = document.form2.distance2.options[document.form2.distance2.selectedIndex].value;
+
+            // 会場
+            var plc2 = document.form2.place2.options[document.form2.place2.selectedIndex].value;
+
+            // 馬場
+            var hmd2 = document.form2.humid2.options[document.form2.humid2.selectedIndex].value;
+
+            // 休養
+            var rst2 = document.form2.rest2.options[document.form2.rest2.selectedIndex].value;
+
+            // 合計計算
+            var total2 = parseFloat(price2) * parseFloat(pop2) * parseFloat(wgh2) * parseFloat(dtc2) * parseFloat(plc2) * parseFloat(hmd2) * parseFloat(rst2) * 100;
+
+            // 設定終了
+
+            document.form2.field_total2.value = total2; // 合計表示
+
+        }
+
+        function keisan3() {
+
+            // 騎手
+            var price3 = document.form3.goods3.options[document.form3.goods3.selectedIndex].value;
+
+            // 人気　
+            var pop3 = document.form3.popularity3.options[document.form3.popularity3.selectedIndex].value;
+
+            // 馬体重
+            var wgh3 = document.form3.weight3.options[document.form3.weight3.selectedIndex].value;
+
+            // 距離
+            var dtc3 = document.form3.distance3.options[document.form3.distance3.selectedIndex].value;
+
+            // 会場
+            var plc3 = document.form3.place3.options[document.form3.place3.selectedIndex].value;
+
+            // 馬場
+            var hmd3 = document.form3.humid3.options[document.form3.humid3.selectedIndex].value;
+
+            // 休養
+            var rst3 = document.form3.rest3.options[document.form3.rest3.selectedIndex].value;
+
+            // 合計計算
+            var total3 = parseFloat(price3) * parseFloat(pop3) * parseFloat(wgh3) * parseFloat(dtc3) * parseFloat(plc3) * parseFloat(hmd3) * parseFloat(rst3) * 100;
+
+            // 設定終了
+
+            document.form3.field_total3.value = total3; // 合計表示
+
+        }
+
+        function keisan4() {
+
+            // 騎手
+            var price4 = document.form4.goods4.options[document.form4.goods4.selectedIndex].value;
+
+            // 人気　
+            var pop4 = document.form4.popularity4.options[document.form4.popularity4.selectedIndex].value;
+
+            // 馬体重
+            var wgh4 = document.form4.weight4.options[document.form4.weight4.selectedIndex].value;
+
+            // 距離
+            var dtc4 = document.form4.distance4.options[document.form4.distance4.selectedIndex].value;
+
+            // 会場
+            var plc4 = document.form4.place4.options[document.form4.place4.selectedIndex].value;
+
+            // 馬場
+            var hmd4 = document.form4.humid4.options[document.form4.humid4.selectedIndex].value;
+
+            // 休養
+            var rst4 = document.form4.rest4.options[document.form4.rest4.selectedIndex].value;
+
+            // 合計計算
+            var total4 = parseFloat(price4) * parseFloat(pop4) * parseFloat(wgh4) * parseFloat(dtc4) * parseFloat(plc4) * parseFloat(hmd4) * parseFloat(rst4) * 100;
+
+            // 設定終了
+
+            document.form4.field_total4.value = total4; // 合計表示
+
+        }
+        function keisan5() {
+
+            // 騎手
+            var price5 = document.form5.goods5.options[document.form5.goods5.selectedIndex].value;
+
+            // 人気　
+            var pop5 = document.form5.popularity5.options[document.form5.popularity5.selectedIndex].value;
+
+            // 馬体重
+            var wgh5 = document.form5.weight5.options[document.form5.weight5.selectedIndex].value;
+
+            // 距離
+            var dtc5 = document.form5.distance5.options[document.form5.distance5.selectedIndex].value;
+
+            // 会場
+            var plc5 = document.form5.place5.options[document.form5.place5.selectedIndex].value;
+
+            // 馬場
+            var hmd5 = document.form5.humid5.options[document.form5.humid5.selectedIndex].value;
+
+            // 休養
+            var rst5 = document.form5.rest5.options[document.form5.rest5.selectedIndex].value;
+
+            // 合計計算
+            var total5 = parseFloat(price5) * parseFloat(pop5) * parseFloat(wgh5) * parseFloat(dtc5) * parseFloat(plc5) * parseFloat(hmd5) * parseFloat(rst5) * 100;
+
+            // 設定終了
+
+            document.form5.field_total5.value = total5; // 合計表示
+
+        }
+
+        function keisan6() {
+
+            // 騎手
+            var price6 = document.form6.goods6.options[document.form6.goods6.selectedIndex].value;
+
+            // 人気　
+            var pop6 = document.form6.popularity6.options[document.form6.popularity6.selectedIndex].value;
+
+            // 馬体重
+            var wgh6 = document.form6.weight6.options[document.form6.weight6.selectedIndex].value;
+
+            // 距離
+            var dtc6 = document.form6.distance6.options[document.form6.distance6.selectedIndex].value;
+
+            // 会場
+            var plc6 = document.form6.place6.options[document.form6.place6.selectedIndex].value;
+
+            // 馬場
+            var hmd6 = document.form6.humid6.options[document.form6.humid6.selectedIndex].value;
+
+            // 休養
+            var rst6 = document.form6.rest6.options[document.form6.rest6.selectedIndex].value;
+
+            // 合計計算
+            var total6 = parseFloat(price6) * parseFloat(pop6) * parseFloat(wgh6) * parseFloat(dtc6) * parseFloat(plc6) * parseFloat(hmd6) * parseFloat(rst6) * 100;
+
+            // 設定終了
+
+            document.form6.field_total6.value = total6; // 合計表示
+
+        }
+
+        function keisan7() {
+
+            // 騎手
+            var price7 = document.form7.goods7.options[document.form7.goods7.selectedIndex].value;
+
+            // 人気　
+            var pop7 = document.form7.popularity7.options[document.form7.popularity7.selectedIndex].value;
+
+            // 馬体重
+            var wgh7 = document.form7.weight7.options[document.form7.weight7.selectedIndex].value;
+
+            // 距離
+            var dtc7 = document.form7.distance7.options[document.form7.distance7.selectedIndex].value;
+
+            // 会場
+            var plc7 = document.form7.place7.options[document.form7.place7.selectedIndex].value;
+
+            // 馬場
+            var hmd7 = document.form7.humid7.options[document.form7.humid7.selectedIndex].value;
+
+            // 休養
+            var rst7 = document.form7.rest7.options[document.form7.rest7.selectedIndex].value;
+
+            // 合計計算
+            var total7 = parseFloat(price7) * parseFloat(pop7) * parseFloat(wgh7) * parseFloat(dtc7) * parseFloat(plc7) * parseFloat(hmd7) * parseFloat(rst7) * 100;
+
+            // 設定終了
+
+            document.form7.field_total7.value = total7; // 合計表示
+
+        } function keisan8() {
+
+            // 騎手
+            var price8 = document.form8.goods8.options[document.form8.goods8.selectedIndex].value;
+
+            // 人気　
+            var pop8 = document.form8.popularity8.options[document.form8.popularity8.selectedIndex].value;
+
+            // 馬体重
+            var wgh8 = document.form8.weight8.options[document.form8.weight8.selectedIndex].value;
+
+            // 距離
+            var dtc8 = document.form8.distance8.options[document.form8.distance8.selectedIndex].value;
+
+            // 会場
+            var plc8 = document.form8.place8.options[document.form8.place8.selectedIndex].value;
+
+            // 馬場
+            var hmd8 = document.form8.humid8.options[document.form8.humid8.selectedIndex].value;
+
+            // 休養
+            var rst8 = document.form8.rest8.options[document.form8.rest8.selectedIndex].value;
+
+            // 合計計算
+            var total8 = parseFloat(price8) * parseFloat(pop8) * parseFloat(wgh8) * parseFloat(dtc8) * parseFloat(plc8) * parseFloat(hmd8) * parseFloat(rst8) * 100;
+
+            // 設定終了
+
+            document.form8.field_total8.value = total8; // 合計表示
+
+        }
+
+        function keisan9() {
+
+            // 騎手
+            var price9 = document.form9.goods9.options[document.form9.goods9.selectedIndex].value;
+
+            // 人気　
+            var pop9 = document.form9.popularity9.options[document.form9.popularity9.selectedIndex].value;
+
+            // 馬体重
+            var wgh9 = document.form9.weight9.options[document.form9.weight9.selectedIndex].value;
+
+            // 距離
+            var dtc9 = document.form9.distance9.options[document.form9.distance9.selectedIndex].value;
+
+            // 会場
+            var plc9 = document.form9.place9.options[document.form9.place9.selectedIndex].value;
+
+            // 馬場
+            var hmd9 = document.form9.humid9.options[document.form9.humid9.selectedIndex].value;
+
+            // 休養
+            var rst9 = document.form9.rest9.options[document.form9.rest9.selectedIndex].value;
+
+            // 合計計算
+            var total9 = parseFloat(price9) * parseFloat(pop9) * parseFloat(wgh9) * parseFloat(dtc9) * parseFloat(plc9) * parseFloat(hmd9) * parseFloat(rst9) * 100;
+
+            // 設定終了
+
+            document.form9.field_total9.value = total9; // 合計表示
+
+        }
+
+        function keisan10() {
+
+            // 騎手
+            var price10 = document.form10.goods10.options[document.form10.goods10.selectedIndex].value;
+
+            // 人気　
+            var pop10 = document.form10.popularity10.options[document.form10.popularity10.selectedIndex].value;
+
+            // 馬体重
+            var wgh10 = document.form10.weight10.options[document.form10.weight10.selectedIndex].value;
+
+            // 距離
+            var dtc10 = document.form10.distance10.options[document.form10.distance10.selectedIndex].value;
+
+            // 会場
+            var plc10 = document.form10.place10.options[document.form10.place10.selectedIndex].value;
+
+            // 馬場
+            var hmd10 = document.form10.humid10.options[document.form10.humid10.selectedIndex].value;
+
+            // 休養
+            var rst10 = document.form10.rest10.options[document.form10.rest10.selectedIndex].value;
+
+            // 合計計算
+            var total10 = parseFloat(price10) * parseFloat(pop10) * parseFloat(wgh10) * parseFloat(dtc10) * parseFloat(plc10) * parseFloat(hmd10) * parseFloat(rst10) * 100;
+
+            // 設定終了
+
+            document.form10.field_total10.value = total10; // 合計表示
+
+        }
+
+        function keisan11() {
+
+            // 騎手
+            var price11 = document.form11.goods11.options[document.form11.goods11.selectedIndex].value;
+
+            // 人気　
+            var pop11 = document.form11.popularity11.options[document.form11.popularity11.selectedIndex].value;
+
+            // 馬体重
+            var wgh11 = document.form11.weight11.options[document.form11.weight11.selectedIndex].value;
+
+            // 距離
+            var dtc11 = document.form11.distance11.options[document.form11.distance11.selectedIndex].value;
+
+            // 会場
+            var plc11 = document.form11.place11.options[document.form11.place11.selectedIndex].value;
+
+            // 馬場
+            var hmd11 = document.form11.humid11.options[document.form11.humid11.selectedIndex].value;
+
+            // 休養
+            var rst11 = document.form11.rest11.options[document.form11.rest11.selectedIndex].value;
+
+            // 合計計算
+            var total11 = parseFloat(price11) * parseFloat(pop11) * parseFloat(wgh11) * parseFloat(dtc11) * parseFloat(plc11) * parseFloat(hmd11) * parseFloat(rst11) * 100;
+
+            // 設定終了
+
+            document.form11.field_total11.value = total11; // 合計表示
+
+        }
+
+        function keisan12() {
+
+            // 騎手
+            var price12 = document.form12.goods12.options[document.form12.goods12.selectedIndex].value;
+
+            // 人気　
+            var pop12 = document.form12.popularity12.options[document.form12.popularity12.selectedIndex].value;
+
+            // 馬体重
+            var wgh12 = document.form12.weight12.options[document.form12.weight12.selectedIndex].value;
+
+            // 距離
+            var dtc12 = document.form12.distance12.options[document.form12.distance12.selectedIndex].value;
+
+            // 会場
+            var plc12 = document.form12.place12.options[document.form12.place12.selectedIndex].value;
+
+            // 馬場
+            var hmd12 = document.form12.humid12.options[document.form12.humid12.selectedIndex].value;
+
+            // 休養
+            var rst12 = document.form12.rest12.options[document.form12.rest12.selectedIndex].value;
+
+            // 合計計算
+            var total12 = parseFloat(price12) * parseFloat(pop12) * parseFloat(wgh12) * parseFloat(dtc12) * parseFloat(plc12) * parseFloat(hmd12) * parseFloat(rst12) * 100;
+
+            // 設定終了
+
+            document.form12.field_total12.value = total12; // 合計表示
+
+        }
+
+        function keisan13() {
+
+            // 騎手
+            var price13 = document.form13.goods13.options[document.form13.goods13.selectedIndex].value;
+
+            // 人気　
+            var pop13 = document.form13.popularity13.options[document.form13.popularity13.selectedIndex].value;
+
+            // 馬体重
+            var wgh13 = document.form13.weight13.options[document.form13.weight13.selectedIndex].value;
+
+            // 距離
+            var dtc13 = document.form13.distance13.options[document.form13.distance13.selectedIndex].value;
+
+            // 会場
+            var plc13 = document.form13.place13.options[document.form13.place13.selectedIndex].value;
+
+            // 馬場
+            var hmd13 = document.form13.humid13.options[document.form13.humid13.selectedIndex].value;
+
+            // 休養
+            var rst13 = document.form13.rest13.options[document.form13.rest13.selectedIndex].value;
+
+            // 合計計算
+            var total13 = parseFloat(price13) * parseFloat(pop13) * parseFloat(wgh13) * parseFloat(dtc13) * parseFloat(plc13) * parseFloat(hmd13) * parseFloat(rst13) * 100;
+
+            // 設定終了
+
+            document.form13.field_total13.value = total13; // 合計表示
+
+        }
+
+        function keisan14() {
+
+            // 騎手
+            var price14 = document.form14.goods14.options[document.form14.goods14.selectedIndex].value;
+
+            // 人気　
+            var pop14 = document.form14.popularity14.options[document.form14.popularity14.selectedIndex].value;
+
+            // 馬体重
+            var wgh14 = document.form14.weight14.options[document.form14.weight14.selectedIndex].value;
+
+            // 距離
+            var dtc14 = document.form14.distance14.options[document.form14.distance14.selectedIndex].value;
+
+            // 会場
+            var plc14 = document.form14.place14.options[document.form14.place14.selectedIndex].value;
+
+            // 馬場
+            var hmd14 = document.form14.humid14.options[document.form14.humid14.selectedIndex].value;
+
+            // 休養
+            var rst14 = document.form14.rest14.options[document.form14.rest14.selectedIndex].value;
+
+            // 合計計算
+            var total14 = parseFloat(price14) * parseFloat(pop14) * parseFloat(wgh14) * parseFloat(dtc14) * parseFloat(plc14) * parseFloat(hmd14) * parseFloat(rst14) * 100;
+
+            // 設定終了
+
+            document.form14.field_total14.value = total14; // 合計表示
+
+        }
+
+        function keisan15() {
+
+            // 騎手
+            var price15 = document.form15.goods15.options[document.form15.goods15.selectedIndex].value;
+
+            // 人気　
+            var pop15 = document.form15.popularity15.options[document.form15.popularity15.selectedIndex].value;
+
+            // 馬体重
+            var wgh15 = document.form15.weight15.options[document.form15.weight15.selectedIndex].value;
+
+            // 距離
+            var dtc15 = document.form15.distance15.options[document.form15.distance15.selectedIndex].value;
+
+            // 会場
+            var plc15 = document.form15.place15.options[document.form15.place15.selectedIndex].value;
+
+            // 馬場
+            var hmd15 = document.form15.humid15.options[document.form15.humid15.selectedIndex].value;
+
+            // 休養
+            var rst15 = document.form15.rest15.options[document.form15.rest15.selectedIndex].value;
+
+            // 合計計算
+            var total15 = parseFloat(price15) * parseFloat(pop15) * parseFloat(wgh15) * parseFloat(dtc15) * parseFloat(plc15) * parseFloat(hmd15) * parseFloat(rst15) * 100;
+
+            // 設定終了
+
+            document.form15.field_total15.value = total15; // 合計表示
+
+        }
+
+        function keisan16() {
+
+            // 騎手
+            var price16 = document.form16.goods16.options[document.form16.goods16.selectedIndex].value;
+
+            // 人気　
+            var pop16 = document.form16.popularity16.options[document.form16.popularity16.selectedIndex].value;
+
+            // 馬体重
+            var wgh16 = document.form16.weight16.options[document.form16.weight16.selectedIndex].value;
+
+            // 距離
+            var dtc16 = document.form16.distance16.options[document.form16.distance16.selectedIndex].value;
+
+            // 会場
+            var plc16 = document.form16.place16.options[document.form16.place16.selectedIndex].value;
+
+            // 馬場
+            var hmd16 = document.form16.humid16.options[document.form16.humid16.selectedIndex].value;
+
+            // 休養
+            var rst16 = document.form16.rest16.options[document.form16.rest16.selectedIndex].value;
+
+            // 合計計算
+            var total16 = parseFloat(price16) * parseFloat(pop16) * parseFloat(wgh16) * parseFloat(dtc16) * parseFloat(plc16) * parseFloat(hmd16) * parseFloat(rst16) * 100;
+
+            // 設定終了
+
+            document.form16.field_total16.value = total16; // 合計表示
+
+        }
+
+        function keisan17() {
+
+            // 騎手
+            var price17 = document.form17.goods17.options[document.form17.goods17.selectedIndex].value;
+
+            // 人気　
+            var pop17 = document.form17.popularity17.options[document.form17.popularity17.selectedIndex].value;
+
+            // 馬体重
+            var wgh17 = document.form17.weight17.options[document.form17.weight17.selectedIndex].value;
+
+            // 距離
+            var dtc17 = document.form17.distance17.options[document.form17.distance17.selectedIndex].value;
+
+            // 会場
+            var plc17 = document.form17.place17.options[document.form17.place17.selectedIndex].value;
+
+            // 馬場
+            var hmd17 = document.form17.humid17.options[document.form17.humid17.selectedIndex].value;
+
+            // 休養
+            var rst17 = document.form17.rest17.options[document.form17.rest17.selectedIndex].value;
+
+            // 合計計算
+            var total17 = parseFloat(price17) * parseFloat(pop17) * parseFloat(wgh17) * parseFloat(dtc17) * parseFloat(plc17) * parseFloat(hmd17) * parseFloat(rst17) * 100;
+
+            // 設定終了
+
+            document.form17.field_total17.value = total17; // 合計表示
+
+        }
+
+        function keisan18() {
+
+            // 騎手
+            var price18 = document.form18.goods18.options[document.form18.goods18.selectedIndex].value;
+
+            // 人気　
+            var pop18 = document.form18.popularity18.options[document.form18.popularity18.selectedIndex].value;
+
+            // 馬体重
+            var wgh18 = document.form18.weight18.options[document.form18.weight18.selectedIndex].value;
+
+            // 距離
+            var dtc18 = document.form18.distance18.options[document.form18.distance18.selectedIndex].value;
+
+            // 会場
+            var plc18 = document.form18.place18.options[document.form18.place18.selectedIndex].value;
+
+            // 馬場
+            var hmd18 = document.form18.humid18.options[document.form18.humid18.selectedIndex].value;
+
+            // 休養
+            var rst18 = document.form18.rest18.options[document.form18.rest18.selectedIndex].value;
+
+            // 合計計算
+            var total18 = parseFloat(price18) * parseFloat(pop18) * parseFloat(wgh18) * parseFloat(dtc18) * parseFloat(plc18) * parseFloat(hmd18) * parseFloat(rst18) * 100;
+
+            // 設定終了
+
+            document.form18.field_total18.value = total18; // 合計表示
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <form action="#" name="form1">
+        <table>
+            <tr>
+                <th></th>
+                <th>騎手</th>
+                <th>人気</th>
+                <th>馬体重</th>
+                <th>距離適性</th>
+                <th>会場適性</th>
+                <th>馬場適性</th>
+                <th>休養・疲労</th>
+            </tr>
+            <tr>
+                <td>1レーン</td>
+                <td>
+                    <select name="goods1" onChange="keisan1()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity1" onChange="keisan1()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight1" onChange="keisan1()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance1" onChange="keisan1()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place1" onChange="keisan1()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid1" onChange="keisan1()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest1" onChange="keisan1()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total1" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form2">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>2レーン</td>
+                <td>
+                    <select name="goods2" onChange="keisan2()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity2" onChange="keisan2()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight2" onChange="keisan2()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance2" onChange="keisan2()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place2" onChange="keisan2()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid2" onChange="keisan2()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest2" onChange="keisan2()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total2" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form3">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>3レーン</td>
+                <td>
+                    <select name="goods3" onChange="keisan3()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity3" onChange="keisan3()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight3" onChange="keisan3()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance3" onChange="keisan3()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place3" onChange="keisan3()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid3" onChange="keisan3()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest3" onChange="keisan3()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total3" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form4">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>4レーン</td>
+                <td>
+                    <select name="goods4" onChange="keisan4()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity4" onChange="keisan4()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight4" onChange="keisan4()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance4" onChange="keisan4()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place4" onChange="keisan4()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid4" onChange="keisan4()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest4" onChange="keisan4()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total4" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form5">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>5レーン</td>
+                <td>
+                    <select name="goods5" onChange="keisan5()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity5" onChange="keisan5()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight5" onChange="keisan5()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance5" onChange="keisan5()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place5" onChange="keisan5()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid5" onChange="keisan5()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest5" onChange="keisan5()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total5" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form6">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>6レーン</td>
+                <td>
+                    <select name="goods6" onChange="keisan6()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity6" onChange="keisan6()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight6" onChange="keisan6()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance6" onChange="keisan6()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place6" onChange="keisan6()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid6" onChange="keisan6()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest6" onChange="keisan6()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total6" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form7">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>7レーン</td>
+                <td>
+                    <select name="goods7" onChange="keisan7()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity7" onChange="keisan7()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight7" onChange="keisan7()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance7" onChange="keisan7()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place7" onChange="keisan7()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid7" onChange="keisan7()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest7" onChange="keisan7()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total7" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form8">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>8レーン</td>
+                <td>
+                    <select name="goods8" onChange="keisan8()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity8" onChange="keisan8()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight8" onChange="keisan8()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance8" onChange="keisan8()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place8" onChange="keisan8()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid8" onChange="keisan8()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest8" onChange="keisan8()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total8" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form9">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>9レーン</td>
+                <td>
+                    <select name="goods9" onChange="keisan9()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity9" onChange="keisan9()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight9" onChange="keisan9()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance9" onChange="keisan9()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place9" onChange="keisan9()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid9" onChange="keisan9()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest9" onChange="keisan9()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total9" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form10">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>10レーン</td>
+                <td>
+                    <select name="goods10" onChange="keisan10()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity10" onChange="keisan10()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight10" onChange="keisan10()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance10" onChange="keisan10()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place10" onChange="keisan10()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid10" onChange="keisan10()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest10" onChange="keisan10()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total10" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form11">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>11レーン</td>
+                <td>
+                    <select name="goods11" onChange="keisan11()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity11" onChange="keisan11()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight11" onChange="keisan11()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance11" onChange="keisan11()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place11" onChange="keisan11()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid11" onChange="keisan11()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest11" onChange="keisan11()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total11" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form12">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>12レーン</td>
+                <td>
+                    <select name="goods12" onChange="keisan12()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity12" onChange="keisan12()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight12" onChange="keisan12()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance12" onChange="keisan12()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place12" onChange="keisan12()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid12" onChange="keisan12()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest12" onChange="keisan12()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total12" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form13">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>13レーン</td>
+                <td>
+                    <select name="goods13" onChange="keisan13()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity13" onChange="keisan13()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight13" onChange="keisan13()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance13" onChange="keisan13()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place13" onChange="keisan13()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid13" onChange="keisan13()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest13" onChange="keisan13()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total13" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form14">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>14レーン</td>
+                <td>
+                    <select name="goods14" onChange="keisan14()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity14" onChange="keisan14()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight14" onChange="keisan14()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance14" onChange="keisan14()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place14" onChange="keisan14()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid14" onChange="keisan14()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest14" onChange="keisan14()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total14" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form15">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>15レーン</td>
+                <td>
+                    <select name="goods15" onChange="keisan15()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity15" onChange="keisan15()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight15" onChange="keisan15()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance15" onChange="keisan15()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place15" onChange="keisan15()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid15" onChange="keisan15()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest15" onChange="keisan15()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total15" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form16">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>16レーン</td>
+                <td>
+                    <select name="goods16" onChange="keisan16()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity16" onChange="keisan16()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight16" onChange="keisan16()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance16" onChange="keisan16()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place16" onChange="keisan16()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid16" onChange="keisan16()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest16" onChange="keisan16()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total16" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form17">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>17レーン</td>
+                <td>
+                    <select name="goods17" onChange="keisan17()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity17" onChange="keisan17()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight17" onChange="keisan17()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance17" onChange="keisan17()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place17" onChange="keisan17()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid17" onChange="keisan17()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest17" onChange="keisan17()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total17" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="#" name="form18">
+        <table>
+            <tr>
+                <th></th>
+                <th>　　</th>
+                <th>　　</th>
+                <th>　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　</th>
+                <th>　　　　　</th>
+            </tr>
+            <tr>
+                <td>18レーン</td>
+                <td>
+                    <select name="goods18" onChange="keisan18()">
+                        <option value="0">選択してください</option>
+                        <option value="1.7">1.7</option>
+                        <option value="1.8">1.8</option>
+                        <option value="1.9">1.9</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="popularity18" onChange="keisan18()">
+                        <option value="1">1</option>
+                        <option value="0.95">2</option>
+                        <option value="0.9">3</option>
+                        <option value="0.85">4</option>
+                        <option value="0.8">5</option>
+                        <option value="0.75">6</option>
+                        <option value="0.7">7</option>
+                        <option value="0.65">8</option>
+                        <option value="0.6">9</option>
+                        <option value="0.5">10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="weight18" onChange="keisan18()">
+                        <option value="1">±1以下</option>
+                        <option value="0.97">±3</option>
+                        <option value="0.91">±5</option>
+                        <option value="0.87">±8</option>
+                        <option value="0.8">±10以上</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="distance18" onChange="keisan18()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="place18" onChange="keisan18()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="humid18" onChange="keisan18()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="rest18" onChange="keisan18()">
+                        <option value="1">◎</option>
+                        <option value="0.97">〇</option>
+                        <option value="0.9">△</option>
+                        <option value="0.85">X</option>
+                    </select>
+                </td>
+                <td align="right"><strong>合計</strong></td>
+                <td><input type="text" name="field_total18" size="8" value="0"> </td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+</body>
+
+</html>
